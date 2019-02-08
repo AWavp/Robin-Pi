@@ -1,0 +1,21 @@
+ # Reset Ball and Update Score if Ball Leaves Court
+        if ex < 0-5:
+                ex = 63
+                ey = 31
+                dx = dx * -1
+                dy = dy * -1
+                rp_score = rp_score +1
+                bounces = 0
+                time.sleep(.5)
+        elif ex > width+1:
+                ex = 70
+                ey = 35
+                dx = dx * 1
+                dy = dy * 1
+                lp_score = lp_score +1
+                bounces = 0
+                time.sleep(.5)
+        if bounces > hi_score:
+                hi_score = bounces
+                
+              
